@@ -34,7 +34,7 @@ function ExtendFlowConfig(target) {
 
         for (k in config) {
             if (!target[k]) {
-                target[k] = _lodash2.default.merge([], config[k]);
+                target[k] = _lodash2.default.cloneDeep(config[k]);
             } else {
                 target[k] = extendOptions(target[k], config[k]);
             }

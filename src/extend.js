@@ -22,7 +22,7 @@ export function ExtendFlowConfig(
 
         for ( k in config ) {
             if ( !target[ k ] ) {
-                target[ k ] = _.merge( [], config[ k ] );
+                target[ k ] = _.cloneDeep( config[ k ] );
             } else {
                 target[ k ] = extendOptions( target[ k ], config[ k ] );
             }
