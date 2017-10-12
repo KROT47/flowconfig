@@ -1,0 +1,80 @@
+[include]
+
+[ignore]
+<PROJECT_ROOT>/build/
+<PROJECT_ROOT>/dist/
+<PROJECT_ROOT>/plop/
+<PROJECT_ROOT>/coverage/
+<PROJECT_ROOT>/node_modules/draft-js/*
+<PROJECT_ROOT>/build/test
+<PROJECT_ROOT>/../data/build/
+<PROJECT_ROOT>/../data/build/test
+[libs]
+
+[options]
+module.name_mapper='^~root\(/?.*\)$' -> '<PROJECT_ROOT>/\1'
+module.name_mapper='^~APIs\(/?.*\)$' -> '<PROJECT_ROOT>/APIs\1'
+module.name_mapper='^~modules\(/?.*\)$' -> '<PROJECT_ROOT>/modules\1'
+module.name_mapper='^~HoC$' -> '<PROJECT_ROOT>/src/HoC'
+module.name_mapper='^~HoC\(\(/[^/]+\)*\)\(/[^/]+\)\3$' -> '<PROJECT_ROOT>/src/HoC\1\3\3'
+module.name_mapper='^~HoC\(\(/[^/]+\)*\)\(/[A-Z][^/]+\)$' -> '<PROJECT_ROOT>/src/HoC\1\3\3'
+module.name_mapper='^~HoC\(.+\)$' -> '<PROJECT_ROOT>/src/HoC\1'
+module.name_mapper='^~HoW$' -> '<PROJECT_ROOT>/src/HoW'
+module.name_mapper='^~HoW\(\(/[^/]+\)*\)\(/[^/]+\)\3$' -> '<PROJECT_ROOT>/src/HoW\1\3\3'
+module.name_mapper='^~HoW\(\(/[^/]+\)*\)\(/[A-Z][^/]+\)$' -> '<PROJECT_ROOT>/src/HoW\1\3\3'
+module.name_mapper='^~HoW\(.+\)$' -> '<PROJECT_ROOT>/src/HoW\1'
+module.name_mapper='^~containers$' -> '<PROJECT_ROOT>/src/containers'
+module.name_mapper='^~containers\(\(/[^/]+\)*\)\(/[^/]+\)\3$' -> '<PROJECT_ROOT>/src/containers\1\3\3'
+module.name_mapper='^~containers\(\(/[^/]+\)*\)\(/[A-Z][^/]+\)$' -> '<PROJECT_ROOT>/src/containers\1\3\3'
+module.name_mapper='^~containers\(.+\)$' -> '<PROJECT_ROOT>/src/containers\1'
+module.name_mapper='^~components$' -> '<PROJECT_ROOT>/src/components'
+module.name_mapper='^~components\(\(/[^/]+\)*\)\(/[^/]+\)\3$' -> '<PROJECT_ROOT>/src/components\1\3\3'
+module.name_mapper='^~components\(\(/[^/]+\)*\)\(/[A-Z][^/]+\)$' -> '<PROJECT_ROOT>/src/components\1\3\3'
+module.name_mapper='^~components\(.+\)$' -> '<PROJECT_ROOT>/src/components\1'
+module.name_mapper='^~modals$' -> '<PROJECT_ROOT>/src/components/Modals/components'
+module.name_mapper='^~modals\(\(/[^/]+\)*\)\(/[^/]+\)\3$' -> '<PROJECT_ROOT>/src/components/Modals/components\1\3\3'
+module.name_mapper='^~modals\(\(/[^/]+\)*\)\(/[A-Z][^/]+\)$' -> '<PROJECT_ROOT>/src/components/Modals/components\1\3\3'
+module.name_mapper='^~modals\(.+\)$' -> '<PROJECT_ROOT>/src/components/Modals/components\1'
+module.name_mapper='^~dialogs$' -> '<PROJECT_ROOT>/src/components/Dialogs/components'
+module.name_mapper='^~dialogs\(\(/[^/]+\)*\)\(/[^/]+\)\3$' -> '<PROJECT_ROOT>/src/components/Dialogs/components\1\3\3'
+module.name_mapper='^~dialogs\(\(/[^/]+\)*\)\(/[A-Z][^/]+\)$' -> '<PROJECT_ROOT>/src/components/Dialogs/components\1\3\3'
+module.name_mapper='^~dialogs\(.+\)$' -> '<PROJECT_ROOT>/src/components/Dialogs/components\1'
+module.name_mapper='^\./components\(\(/[^/]+\)*\)\(/[^/]+\)\3$' -> './components\1\3\3'
+module.name_mapper='^\./components\(\(/[^/]+\)*\)\(/[A-Z][^/]+\)$' -> './components\1\3\3'
+module.name_mapper='^~baseComponents$' -> '<PROJECT_ROOT>/src/components/_base'
+module.name_mapper='^~baseComponents\(\(/[^/]+\)*\)\(/[^/]+\)\3$' -> '<PROJECT_ROOT>/src/components/_base\1\3\3'
+module.name_mapper='^~baseComponents\(\(/[^/]+\)*\)\(/[A-Z][^/]+\)$' -> '<PROJECT_ROOT>/src/components/_base\1\3\3'
+module.name_mapper='^~baseComponents\(.+\)$' -> '<PROJECT_ROOT>/src/components/_base\1'
+module.name_mapper='^~config\(/?.*\)$' -> '<PROJECT_ROOT>/config\1'
+module.name_mapper='^~store\(/?.*\)$' -> '<PROJECT_ROOT>/src/store\1'
+module.name_mapper='^~models\(/?.*\)$' -> '<PROJECT_ROOT>/src/models\1'
+module.name_mapper='^~graphql\(/?.*\)$' -> '<PROJECT_ROOT>/src/graphql\1'
+module.name_mapper='^~queries\(/?.*\)$' -> '<PROJECT_ROOT>/src/graphql/queries\1'
+module.name_mapper='^~mutations\(/?.*\)$' -> '<PROJECT_ROOT>/src/graphql/mutations\1'
+module.name_mapper='^~helpers\(/?.*\)$' -> '<PROJECT_ROOT>/src/helpers\1'
+module.name_mapper='^~types\(/?.*\)$' -> '<PROJECT_ROOT>/src/types\1'
+module.name_mapper='^~mocks\(/?.*\)$' -> '<PROJECT_ROOT>/src/mocks\1'
+module.name_mapper='^~styles\(/?.*\)$' -> '<PROJECT_ROOT>/src/styles\1'
+module.name_mapper='^~assets\(/?.*\)$' -> '<PROJECT_ROOT>/public/assets\1'
+module.name_mapper='^~images\(/?.*\)$' -> '<PROJECT_ROOT>/public/assets/images\1'
+module.name_mapper='^~icons\(/?.*\)$' -> '<PROJECT_ROOT>/public/assets/images/icons\1'
+module.name_mapper='^~icons\(/?.*\)$' -> '<PROJECT_ROOT>/public/assets/images/icons\1'
+module.name_mapper.extension='less' -> '<PROJECT_ROOT>/flow/mocks/CSSModule.js.flow'
+module.name_mapper.extension='scss' -> '<PROJECT_ROOT>/flow/mocks/CSSModule.js.flow'
+module.name_mapper.extension='css' -> '<PROJECT_ROOT>/flow/mocks/CSSModule.js.flow'
+module.name_mapper.extension='png' -> '<PROJECT_ROOT>/flow/mocks/WebpackAsset.js.flow'
+module.name_mapper.extension='jpg' -> '<PROJECT_ROOT>/flow/mocks/WebpackAsset.js.flow'
+module.name_mapper.extension='svg' -> '<PROJECT_ROOT>/flow/mocks/WebpackAsset.js.flow'
+module.name_mapper.extension='gql' -> '<PROJECT_ROOT>/flow/mocks/GraphQLScript.js.flow'
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+esproposal.export_star_as=enable
+suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe
+suppress_comment=\\(.\\|\n\\)*\\$FlowIssue
+suppress_type=$FlowFixMe
+suppress_type=$FlowTODO
+emoji=true
+unsafe.enable_getters_and_setters=true
+module.ignore_non_literal_requires=true
+module.name_mapper='^~testRoot\(/?.*\)$' -> '<PROJECT_ROOT>/\1'
+module.name_mapper='^~testRoot\(/?.*\)$' -> '<PROJECT_ROOT>/../data/\1'

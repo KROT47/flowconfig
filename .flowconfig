@@ -1,0 +1,42 @@
+## @see: https://flow.org/en/docs/config/options
+## -----------------------------------------------------------------------------
+[include]
+
+[ignore]
+
+## draft-js issue: https://github.com/facebook/draft-js/issues/1272
+## -----------------------------------------------------------------------------
+<PROJECT_ROOT>/node_modules/draft-js/*
+
+[libs]
+
+[options]
+
+## Other
+## -----------------------------------------------------------------------------
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+esproposal.export_star_as=enable
+
+# decorators are not working yet so better don't use them
+# but if it is needed uncomment following line
+# esproposal.decorators=ignore
+
+# Defines a magical comment that suppresses any Flow errors on the following line. For example:
+# | // $FlowFixMe: suppressing this error until we can refactor
+# | var x : string = 123;
+suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe
+# same but to define flow issue
+suppress_comment=\\(.\\|\n\\)*\\$FlowIssue
+
+# instead of using `any` you may use suppress_type to define some undone work. For example:
+# | var myString: $FlowFixMe = 1 + 1;
+# | var myBoolean: $FlowTODO = 1 + 1;
+suppress_type=$FlowFixMe
+suppress_type=$FlowTODO
+
+emoji=true
+
+unsafe.enable_getters_and_setters=true
+
+module.ignore_non_literal_requires=true

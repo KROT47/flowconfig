@@ -1,0 +1,15 @@
+## @see: https://flow.org/en/docs/config/options
+## -----------------------------------------------------------------------------
+[include]
+
+[ignore]
+<PROJECT_ROOT>/build/
+<PROJECT_ROOT>/build/test
+
+[libs]
+
+[options]
+
+## Path aliases
+## -----------------------------------------------------------------------------
+module.name_mapper='^~testRoot\(/?.*\)$'    -> '<PROJECT_ROOT>/\1'
