@@ -10,6 +10,10 @@
     "build": "./node_modules/.bin/babel src --out-dir dist",
     "test": "yarn build && ./node_modules/.bin/babel-node tests/test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KROT47/flowconfig.git"
+  },
   "author": "KROT47",
   "license": "ISC",
   "devDependencies": {

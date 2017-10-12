@@ -1,7 +1,7 @@
 .DS_STORE
 *.log
 /node_modules/
-test/exec/
+tests/exec/
 .idea/
 
 .npmignore
