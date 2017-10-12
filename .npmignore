@@ -1,0 +1,9 @@
+.gitignore
+.npmignore
+.git
+
+node_modules/
+browserified/
+
+*.bat
+*.log
